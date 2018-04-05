@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-row (click)="changeAuto('autoRoutes')">
+        <ion-col text-left>Auto refresh routes:</ion-col>
+        <ion-col [innerHTML]="settings?.autoRoutes.disabled ? 'Disabled' : range.autoRoutes + ' seconds'" text-right></ion-col>
+      </ion-row>
+      <ion-row *ngIf='!settings?.autoRoutes.disabled'>
+        <ion-item no-lines>
+          <ion-range color="secondary" min="15" step="15" max="90" snaps="true" [(ngModel)]="range.autoRoutes" (change)="updateRangeText('autoRoutes')"></ion-range>
+        </ion-item>
+        <p class="tapInfo">Tap the Auto refresh routes header to disable this option</p>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row (click)="changeAuto('autoStops')">
+        <ion-col text-left>Auto refresh stops:</ion-col>
+        <ion-col [innerHTML]="settings?.autoStops.disabled ? 'Disabled' : range.autoStops + ' seconds'" text-right></ion-col>
+      </ion-row>
+      <ion-row *ngIf='!settings?.autoStops.disabled'>
+        <ion-item no-lines>
+          <ion-range color="secondary" min="15" step="15" max="90" snaps="true" [(ngModel)]="range.autoStops" (change)="updateRangeText('autoStops')"></ion-range>
+        </ion-item>
+        <p class="tapInfo">Tap the Auto refresh stops header to disable this option</p>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col text-left>{{'Main View'}}:</ion-col>
+        <ion-col text-right>{{settings?.loadScreen.value === 'map' ? 'Map' : 'Bus Stops'}}</ion-col>
+      </ion-row>
+      <ion-segment [(ngModel)]="settings?.loadScreen.value" (ionChange)="changeLoadScreen(settings?.loadScreen.value)">
+        <ion-segment-button value="map">Map</ion-segment-button>
+        <ion-segment-button value="stops">Bus Stops</ion-segment-button>
+      </ion-segment>
+      <ion-row>
+        <p class="tapInfo">By default the main view is the map</p>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</ion-content>

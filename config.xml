@@ -81,4 +81,9 @@
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <plugin name="cordova-plugin-googlemaps" spec="^2.2.9">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDAV9ZLafzrGG-Q8y6Ec0QHLS0tOFrxwg0" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyDAV9ZLafzrGG-Q8y6Ec0QHLS0tOFrxwg0" />
+    </plugin>
+    <plugin name="cordova-sqlite-storage" spec="^2.3.0" />
 </widget>

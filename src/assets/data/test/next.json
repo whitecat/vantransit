@@ -1,0 +1,16 @@
+[
+  {
+    "VehicleNo": "7178",
+    "TripId": 7219920,
+    "RouteNo": "049",
+    "Direction": "WEST",
+    "Destination": "DUNBAR LOOP",
+    "Pattern": "WB7",
+    "Latitude": 49.225467,
+    "Longitude": -123.0913,
+    "RecordedTime": "10:38:50 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/049.kmz"
+    }
+  }
+]

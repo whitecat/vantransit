@@ -1,0 +1,520 @@
+[
+  {
+    "VehicleNo": "7178",
+    "TripId": 7219920,
+    "RouteNo": "049",
+    "Direction": "WEST",
+    "Destination": "DUNBAR LOOP",
+    "Pattern": "WB7",
+    "Latitude": 49.225467,
+    "Longitude": -123.0913,
+    "RecordedTime": "10:38:50 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/049.kmz"
+    }
+  },
+  {
+    "VehicleNo": "7207",
+    "TripId": 7219789,
+    "RouteNo": "049",
+    "Direction": "EAST",
+    "Destination": "METROTOWN STN",
+    "Pattern": "EB2",
+    "Latitude": 49.225433,
+    "Longitude": -123.09,
+    "RecordedTime": "10:39:01 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/049.kmz"
+    }
+  },
+  {
+    "VehicleNo": "7260",
+    "TripId": 7219056,
+    "RouteNo": "041",
+    "Direction": "WEST",
+    "Destination": "UBC",
+    "Pattern": "WB1REG",
+    "Latitude": 49.232917,
+    "Longitude": -123.090167,
+    "RecordedTime": "10:38:44 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8012",
+    "TripId": 7222934,
+    "RouteNo": "099",
+    "Direction": "WEST",
+    "Destination": "UBC B-LINE",
+    "Pattern": "WB1",
+    "Latitude": 49.2637,
+    "Longitude": -123.14545,
+    "RecordedTime": "10:38:08 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8028",
+    "TripId": 7222935,
+    "RouteNo": "099",
+    "Direction": "WEST",
+    "Destination": "UBC B-LINE",
+    "Pattern": "WB1",
+    "Latitude": 49.26385,
+    "Longitude": -123.154467,
+    "RecordedTime": "10:37:25 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8045",
+    "TripId": 7222932,
+    "RouteNo": "099",
+    "Direction": "WEST",
+    "Destination": "UBC B-LINE",
+    "Pattern": "WB2",
+    "Latitude": 49.2624,
+    "Longitude": -123.078817,
+    "RecordedTime": "10:38:09 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8046",
+    "TripId": 7222698,
+    "RouteNo": "099",
+    "Direction": "EAST",
+    "Destination": "COMM'L-BDWAY STN",
+    "Pattern": "EB1",
+    "Latitude": 49.263617,
+    "Longitude": -123.1416,
+    "RecordedTime": "10:37:47 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8051",
+    "TripId": 7222930,
+    "RouteNo": "099",
+    "Direction": "WEST",
+    "Destination": "UBC B-LINE",
+    "Pattern": "WB1",
+    "Latitude": 49.2634,
+    "Longitude": -123.06895,
+    "RecordedTime": "10:36:30 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8070",
+    "TripId": 7222700,
+    "RouteNo": "099",
+    "Direction": "EAST",
+    "Destination": "COMM'L-BDWAY STN",
+    "Pattern": "EB1",
+    "Latitude": 49.262383,
+    "Longitude": -123.0762,
+    "RecordedTime": "10:38:27 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8073",
+    "TripId": 7222694,
+    "RouteNo": "099",
+    "Direction": "EAST",
+    "Destination": "COMM'L-BDWAY STN",
+    "Pattern": "EB1",
+    "Latitude": 49.2686,
+    "Longitude": -123.2478,
+    "RecordedTime": "10:38:28 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8082",
+    "TripId": 7222936,
+    "RouteNo": "099",
+    "Direction": "WEST",
+    "Destination": "UBC B-LINE",
+    "Pattern": "WB1",
+    "Latitude": 49.26385,
+    "Longitude": -123.20965,
+    "RecordedTime": "10:38:58 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8124",
+    "TripId": 7222931,
+    "RouteNo": "099",
+    "Direction": "WEST",
+    "Destination": "UBC B-LINE",
+    "Pattern": "WB1",
+    "Latitude": 49.2623,
+    "Longitude": -123.067983,
+    "RecordedTime": "10:38:55 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8127",
+    "TripId": 7222933,
+    "RouteNo": "099",
+    "Direction": "WEST",
+    "Destination": "UBC B-LINE",
+    "Pattern": "WB1",
+    "Latitude": 49.26335,
+    "Longitude": -123.123133,
+    "RecordedTime": "10:38:02 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8129",
+    "TripId": 7222697,
+    "RouteNo": "099",
+    "Direction": "EAST",
+    "Destination": "COMM'L-BDWAY STN",
+    "Pattern": "EB1",
+    "Latitude": 49.26415,
+    "Longitude": -123.1722,
+    "RecordedTime": "10:38:22 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8139",
+    "TripId": 7222695,
+    "RouteNo": "099",
+    "Direction": "EAST",
+    "Destination": "COMM'L-BDWAY STN",
+    "Pattern": "EB1",
+    "Latitude": 49.268683,
+    "Longitude": -123.248217,
+    "RecordedTime": "10:37:08 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8140",
+    "TripId": 7222696,
+    "RouteNo": "099",
+    "Direction": "EAST",
+    "Destination": "COMM'L-BDWAY STN",
+    "Pattern": "EB1",
+    "Latitude": 49.263817,
+    "Longitude": -123.208183,
+    "RecordedTime": "10:37:38 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "8146",
+    "TripId": 7222699,
+    "RouteNo": "099",
+    "Direction": "EAST",
+    "Destination": "COMM'L-BDWAY STN",
+    "Pattern": "EB1",
+    "Latitude": 49.2633,
+    "Longitude": -123.11995,
+    "RecordedTime": "10:37:11 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/099.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9458",
+    "TripId": 7219833,
+    "RouteNo": "049",
+    "Direction": "EAST",
+    "Destination": "METROTOWN STN",
+    "Pattern": "EB2",
+    "Latitude": 49.226517,
+    "Longitude": -123.127517,
+    "RecordedTime": "10:38:39 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/049.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9467",
+    "TripId": 7219848,
+    "RouteNo": "049",
+    "Direction": "WEST",
+    "Destination": "DUNBAR LOOP",
+    "Pattern": "WB7",
+    "Latitude": 49.226467,
+    "Longitude": -123.126233,
+    "RecordedTime": "10:38:23 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/049.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9470",
+    "TripId": 7219915,
+    "RouteNo": "049",
+    "Direction": "WEST",
+    "Destination": "DUNBAR LOOP",
+    "Pattern": "WB7",
+    "Latitude": 49.223567,
+    "Longitude": -123.041117,
+    "RecordedTime": "10:37:51 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/049.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9496",
+    "TripId": 7218849,
+    "RouteNo": "041",
+    "Direction": "EAST",
+    "Destination": "JOYCE STN",
+    "Pattern": "EB21",
+    "Latitude": 49.234283,
+    "Longitude": -123.138233,
+    "RecordedTime": "10:38:55 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9508",
+    "TripId": 7219804,
+    "RouteNo": "049",
+    "Direction": "EAST",
+    "Destination": "METROTOWN STN",
+    "Pattern": "EB2",
+    "Latitude": 49.234683,
+    "Longitude": -123.185867,
+    "RecordedTime": "10:35:02 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/049.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9521",
+    "TripId": 7218812,
+    "RouteNo": "041",
+    "Direction": "EAST",
+    "Destination": "JOYCE STN",
+    "Pattern": "EB1REG",
+    "Latitude": 49.232917,
+    "Longitude": -123.0935,
+    "RecordedTime": "10:38:53 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9525",
+    "TripId": 7218954,
+    "RouteNo": "041",
+    "Direction": "WEST",
+    "Destination": "TO CROWN",
+    "Pattern": "WB23",
+    "Latitude": 49.23345,
+    "Longitude": -123.11265,
+    "RecordedTime": "10:37:20 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9526",
+    "TripId": 7219010,
+    "RouteNo": "041",
+    "Direction": "WEST",
+    "Destination": "UBC",
+    "Pattern": "WB1REG",
+    "Latitude": 49.23435,
+    "Longitude": -123.14065,
+    "RecordedTime": "10:38:45 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9541",
+    "TripId": 7218959,
+    "RouteNo": "041",
+    "Direction": "WEST",
+    "Destination": "UBC",
+    "Pattern": "WB1REG",
+    "Latitude": 49.254617,
+    "Longitude": -123.235333,
+    "RecordedTime": "10:37:50 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9552",
+    "TripId": 7218856,
+    "RouteNo": "041",
+    "Direction": "EAST",
+    "Destination": "JOYCE STN",
+    "Pattern": "EB1REG",
+    "Latitude": 49.234683,
+    "Longitude": -123.162717,
+    "RecordedTime": "10:38:37 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9555",
+    "TripId": 7219021,
+    "RouteNo": "041",
+    "Direction": "WEST",
+    "Destination": "TO CROWN",
+    "Pattern": "WB23",
+    "Latitude": 49.234783,
+    "Longitude": -123.186317,
+    "RecordedTime": "10:37:40 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9564",
+    "TripId": 7219793,
+    "RouteNo": "049",
+    "Direction": "EAST",
+    "Destination": "METROTOWN STN",
+    "Pattern": "EB2",
+    "Latitude": 49.220133,
+    "Longitude": -123.035767,
+    "RecordedTime": "10:39:02 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/049.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9579",
+    "TripId": 7219022,
+    "RouteNo": "041",
+    "Direction": "WEST",
+    "Destination": "TO CROWN",
+    "Pattern": "WB23",
+    "Latitude": 49.232817,
+    "Longitude": -123.056133,
+    "RecordedTime": "10:38:41 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9583",
+    "TripId": 7219047,
+    "RouteNo": "041",
+    "Direction": "WEST",
+    "Destination": "UBC",
+    "Pattern": "WB1REG",
+    "Latitude": 49.238667,
+    "Longitude": -123.032167,
+    "RecordedTime": "10:38:10 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9685",
+    "TripId": 7218969,
+    "RouteNo": "041",
+    "Direction": "WEST",
+    "Destination": "TO CROWN",
+    "Pattern": "WB23",
+    "Latitude": 49.238633,
+    "Longitude": -123.0321,
+    "RecordedTime": "10:38:53 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9688",
+    "TripId": 7219921,
+    "RouteNo": "049",
+    "Direction": "WEST",
+    "Destination": "DUNBAR LOOP",
+    "Pattern": "WB7",
+    "Latitude": 49.22755,
+    "Longitude": -123.0072,
+    "RecordedTime": "10:38:57 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/049.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9689",
+    "TripId": 7218871,
+    "RouteNo": "041",
+    "Direction": "EAST",
+    "Destination": "JOYCE STN",
+    "Pattern": "EB21",
+    "Latitude": 49.2326,
+    "Longitude": -123.069117,
+    "RecordedTime": "10:38:31 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9690",
+    "TripId": 7218912,
+    "RouteNo": "041",
+    "Direction": "EAST",
+    "Destination": "JOYCE STN",
+    "Pattern": "EB1REG",
+    "Latitude": 49.232767,
+    "Longitude": -123.048067,
+    "RecordedTime": "10:39:02 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9698",
+    "TripId": 7218910,
+    "RouteNo": "041",
+    "Direction": "EAST",
+    "Destination": "JOYCE STN",
+    "Pattern": "EB1REG",
+    "Latitude": 49.26425,
+    "Longitude": -123.243833,
+    "RecordedTime": "10:37:59 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/041.kmz"
+    }
+  },
+  {
+    "VehicleNo": "9709",
+    "TripId": 7219801,
+    "RouteNo": "049",
+    "Direction": "EAST",
+    "Destination": "METROTOWN STN",
+    "Pattern": "EB2",
+    "Latitude": 49.220167,
+    "Longitude": -123.040767,
+    "RecordedTime": "10:38:42 am",
+    "RouteMap": {
+      "Href": "http://nb.translink.ca/geodata/049.kmz"
+    }
+  }
+]
