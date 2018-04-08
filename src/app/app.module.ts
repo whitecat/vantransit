@@ -6,18 +6,20 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { IonicStorageModule } from '@ionic/storage'
 import { HttpModule } from '@angular/http'
 
+// Pages
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { RoutePage } from '../pages/route/route';
 
 // Services
 import { TransitService } from './../providers/transitservice'
 import { RoutesService } from '../providers/routesservice';
+import { Services } from '../providers/services';
 
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    RoutePage
   ],
   imports: [
     BrowserModule,
@@ -28,14 +30,15 @@ import { RoutesService } from '../providers/routesservice';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    RoutePage
   ],
   providers: [
+    Services,
     StatusBar,
     SplashScreen,
     TransitService,
     RoutesService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }

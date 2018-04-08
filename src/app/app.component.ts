@@ -9,7 +9,7 @@ import { SplashScreen } from '@ionic-native/splash-screen'
 export class MyApp {
   @ViewChild(Nav) nav: Nav
 
-  rootPage: any = 'MapPage'
+  rootPage: any = 'RoutesPage'
 
   pages: Array<{ title: string, component: any }>
 
@@ -18,7 +18,8 @@ export class MyApp {
 
     this.pages = [
       { title: 'Map', component: 'MapPage' },
-      { title: 'Bus Routes', component: 'HomePage' },
+      { title: 'Bus Routes', component: 'RoutesPage' },
+      { title: 'Routes', component: 'RoutePage' },
       { title: 'Settings', component: 'SettingsPage' },
       { title: 'About', component: 'AboutPage' }
     ]

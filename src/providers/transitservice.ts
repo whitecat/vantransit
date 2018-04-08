@@ -101,7 +101,7 @@ export class TransitService {
 
   }
 
-  async loadAllStopStops(){
+  async loadAllStops() {
     return await this.http.get(this.stopsURL).map(res => res.json()).toPromise()
   }
 }

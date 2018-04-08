@@ -1,6 +1,11 @@
 import { Injectable } from '@angular/core'
 import { Storage } from '@ionic/storage'
+import { Http } from '@angular/http'
 import 'rxjs/add/operator/toPromise'
+import 'rxjs/add/operator/map'
+
+// Pages
+import { Services } from './services';
 
 @Injectable()
 export class RoutesService {
@@ -8,9 +13,12 @@ export class RoutesService {
   routes;
   selBusIconUrl = 'http://nb.translink.ca/Images/highlightBus/'
   busIconUrl = 'http://nb.translink.ca/Images/bus/'
+  routesURL = 'assets/data/translink/routes.json'
 
   constructor(
-    private storage: Storage
+    private storage: Storage,
+    private http: Http,
+    private services: Services
   ) {
   }
 
@@ -20,7 +28,7 @@ export class RoutesService {
       this.routes = []
       this.loaded = true
     }
-    
+
     return this.routes
   }
 
@@ -28,30 +36,23 @@ export class RoutesService {
     await this.storage.set('routes', this.routes)
   }
 
+  async addToFavorites(route) {
+    let routes = await this.all()
+    if (!this.contains(routes, 'id', route.id)) {
+      routes.push(route);
+      this.save(this.routes);
+      this.services.notify(`Route ${route.RouteNo} added to favourites.`, 'success')
+    } else {
+      this.services.notify(`Route ${route.RouteNo} already in favourites.`, 'warning')
+    }
+  }
 
-  contains(arr, key, val) { // Find array element which has a key value of val 
+  contains(arr, key, val) {
     for (var ai, i = arr.length; i--;)
       if ((ai = arr[i]) && ai[key] == val)
         return true;
     return false;
   };
-
-  newRoute(routeNo, routeName) {
-    // Add a new project
-
-    var routeNoTrim = this.getSplitNo(routeNo);
-
-    if (this.contains(this.routes, 'id', routeNo)) {
-      return null;
-    }
-
-    return {
-      id: routeNo,
-      routeNoTrim: routeNoTrim,
-      routeName: routeName,
-      selected: true
-    };
-  }
 
   remove(index) {
     this.routes.splice(index, 1);
@@ -118,5 +119,8 @@ export class RoutesService {
     return time;
   }
 
+  async loadAllRoutes() {
+    return await this.http.get(this.routesURL).map(res => res.json()).toPromise()
+  }
 
 }

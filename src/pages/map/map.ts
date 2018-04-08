@@ -17,7 +17,7 @@ export class MapPage {
   currStop: any
   currBus: any
   infoWindow: any
-  goImgPos = new google.maps.Point(30, 30)
+  goImgPos: any
   refreshButton: any
   refreshClass: any
   refreshInterval: any
@@ -77,6 +77,7 @@ export class MapPage {
   ) { }
 
   ionViewDidLoad() {
+    this.goImgPos = new google.maps.Point(30, 30)
     this.loadMap()
   }
 
@@ -184,7 +185,7 @@ export class MapPage {
     }
     // Check if zoom is bigger than default, then put stops on the this.map.
     if (this.gMap.getZoom() >= this.defaultZoom) {
-      const resp = await this.transService.loadAllStopStops()
+      const resp = await this.transService.loadAllStops()
       const stopMarkersJson = resp
       this.addStopMarkers(bounds, stopMarkersJson)
       this.prevBounds = bounds

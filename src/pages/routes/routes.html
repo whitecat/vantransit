@@ -3,30 +3,33 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>About</ion-title>
+    <ion-title>Routes</ion-title>
+    <ion-buttons end>
+      <button ion-button *ngIf="editing" (click)="buttonClick()">Done</button>
+      <button ion-button *ngIf="!editing" icon-only (click)="buttonClick()">
+        <ion-icon name="add" (click)="addRoute()"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content>
-  <ion-list show-reorder="data.showReorder">
-    <ion-item class="item-remove-animate item-icon-right" 
-              ng-repeat="route in routes" 
-              type="item-text-wrap" 
-              on-hold="switchNewAndMove()">
-      <label class="alignright toggle toggle-balanced" ng-if="!data.showReorder" ng-click="toggle()">
-        <input type="checkbox" value="{{route.selected}}" ng-model="route.selected">
-        <div class="track">
-          <div class="handle"></div>
-        </div>
-      </label>
-      <h2>{{route.routeNoTrim}}</h2>
-      <p>{{route.routeName}}</p>
-      <ion-reorder-button class="ion-navicon" on-reorder="moveItem(route, $fromIndex, $toIndex)"></ion-reorder-button>
-      <!-- <i class="icon ion-chevron-right icon-accessory "></i> -->
-      <ion-option-button class="button-assertive" ng-click="remove($index)">
-        Delete
-      </ion-option-button>
-    </ion-item>
+  <ion-list *ngIf="routes" [reorder]="editing" (ionItemReorder)="reorderData($event)">
+    <ion-item-sliding *ngFor="let route of routes; index as i" #item>
+      <ion-item class="item-remove-animate item-icon-right" type="item-text-wrap" (press)="toggleEdit()">
+        <ion-toggle [(ngModel)]="route.selected" (ionChange)="saveRoutes()"></ion-toggle>
+        <ion-label>
+          <h2>{{route.routeNoTrim}}</h2>
+          <p>{{route.routeName}}</p>
+        </ion-label>
+      </ion-item>
+      <ion-item-options *ngIf="!editing">
+        <button ion-button color="danger" (click)="remove(i)">
+          <ion-icon name="trash"></ion-icon>
+          Delete
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
   </ion-list>
 </ion-content>

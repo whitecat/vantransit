@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Add Route</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-searchbar placeholder="Search Routes" (ionInput)="filterItems($event)"></ion-searchbar>
+  <ion-list *ngIf="routeFilter">
+    <ion-item *ngFor="let route of routeFilter" type="item-text-wrap">
+      <ion-label (click)="add(route)">
+        <h2>{{route.RouteNo}}</h2>
+        <p>{{route.Destination}}</p>
+      </ion-label>
+      <!-- <span item-end>Add</span> -->
+    </ion-item>
+  </ion-list>
+</ion-content>
