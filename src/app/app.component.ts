@@ -19,7 +19,7 @@ export class MyApp {
     this.pages = [
       { title: 'Map', component: 'MapPage' },
       { title: 'Bus Routes', component: 'RoutesPage' },
-      { title: 'Routes', component: 'RoutePage' },
+      { title: 'Bus Stops', component: 'StopsPage' },
       { title: 'Settings', component: 'SettingsPage' },
       { title: 'About', component: 'AboutPage' }
     ]

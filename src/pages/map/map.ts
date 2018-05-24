@@ -1,7 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core'
 import { IonicPage, NavController, NavParams } from 'ionic-angular'
 import { TransitService } from '../../providers/transitservice'
-import { RoutesService } from '../../providers/routesservice'
+import { RouteService } from '../../providers/routeservice'
 
 declare const google
 
@@ -73,7 +73,7 @@ export class MapPage {
     public navCtrl: NavController,
     public navParams: NavParams,
     private transService: TransitService,
-    private routeService: RoutesService
+    private routeService: RouteService
   ) { }
 
   ionViewDidLoad() {

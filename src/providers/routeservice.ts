@@ -8,8 +8,7 @@ import 'rxjs/add/operator/map'
 import { Services } from './services';
 
 @Injectable()
-export class RoutesService {
-  loaded = false;
+export class RouteService {
   routes;
   selBusIconUrl = 'http://nb.translink.ca/Images/highlightBus/'
   busIconUrl = 'http://nb.translink.ca/Images/bus/'
@@ -26,7 +25,6 @@ export class RoutesService {
     this.routes = await this.storage.get('routes')
     if (!this.routes) {
       this.routes = []
-      this.loaded = true
     }
 
     return this.routes

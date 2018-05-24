@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Add Stop</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-searchbar placeholder="Search Stops" (ionInput)="filterItems($event)"></ion-searchbar>
+  <ion-list *ngIf="filteredStops">
+    <ion-item *ngFor="let stop of stopsShowing" type="item-text-wrap">
+      <ion-label (click)="add(stop)">
+        <h2>{{stop.Name}}</h2>
+        <p>Stop Number: {{stop.StopNo}}</p>
+        <p>Routes: {{removeZeros(stop.Routes)}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading ...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

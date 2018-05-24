@@ -87,8 +87,8 @@ export class TransitService {
 
   // Get all live bus routes that are running
   async loadAllRoutes() {
-    const n = this.d.getTime()
-    const diff = n - this.busUpdated
+    // const n = this.d.getTime()
+    // const diff = n - this.busUpdated
     const uriBuilder = `http://api.translink.ca/rttiapi/v1/buses?apikey=${this.translinkKey}`
 
     const headers = new Headers()

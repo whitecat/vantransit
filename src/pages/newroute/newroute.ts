@@ -1,21 +1,19 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { RoutesService } from '../../providers/routesservice';
-import { Services } from '../../providers/services';
+import { RouteService } from '../../providers/routeservice';
 
 @Component({
-  selector: 'page-route',
-  templateUrl: 'route.html',
+  selector: 'page-newroute',
+  templateUrl: 'newroute.html',
 })
-export class RoutePage {
+export class NewRoutePage {
   routes = []
   routeFilter = []
 
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    private routeservice: RoutesService,
-    private services: Services
+    private routeservice: RouteService
   ) {
     this.routes = navParams.data.routes
     this.routeFilter = this.routes
@@ -36,7 +34,7 @@ export class RoutePage {
     let val = ev.target.value
 
     if (val && val.trim() !== '') {
-      this.routeFilter = this.routes.filter(function (route) {
+      this.routeFilter = this.routes.filter((route) => {
         return (route.Destination + route.RouteNo).toLowerCase().includes(val.toLowerCase())
       });
     }

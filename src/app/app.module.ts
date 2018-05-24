@@ -8,18 +8,21 @@ import { HttpModule } from '@angular/http'
 
 // Pages
 import { MyApp } from './app.component';
-import { RoutePage } from '../pages/route/route';
+import { NewRoutePage } from '../pages/newroute/newroute';
+import { NewStopPage } from '../pages/newstop/newstop';
 
 // Services
 import { TransitService } from './../providers/transitservice'
-import { RoutesService } from '../providers/routesservice';
+import { RouteService } from '../providers/routeservice';
 import { Services } from '../providers/services';
+import { StopService } from '../providers/stopservice';
 
 
 @NgModule({
   declarations: [
     MyApp,
-    RoutePage
+    NewRoutePage,
+    NewStopPage
   ],
   imports: [
     BrowserModule,
@@ -30,14 +33,16 @@ import { Services } from '../providers/services';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    RoutePage
+    NewRoutePage,
+    NewStopPage
   ],
   providers: [
     Services,
     StatusBar,
     SplashScreen,
     TransitService,
-    RoutesService,
+    RouteService,
+    StopService,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
